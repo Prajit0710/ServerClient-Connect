@@ -52,13 +52,13 @@ Use localhost (127.0.0.1) as the host IP address for both server and client.
 
 
 ### 2. Run the Server
-```python 
+```python
 python server.py
-
+```
 ### 3. Run the Client
 ```python 
 python client.py
-
+```
 ### 4. If prompted, enter the server's IP address:
 - **For testing on the same device**: Enter 127.0.0.1.
 - **For different devices**: Enter the IP address of the server device. (Find this by running ipconfig on Windows or ifconfig on Linux/Mac.)
@@ -73,7 +73,7 @@ ________________________________________
 ```plaintext
 Server started. Waiting for clients on 0.0.0.0:12345...
 Client connected from ('127.0.0.1', 54321)
-
+```
 ### Client Terminal:
 ```plaintext
 Enter the host's IP address: 127.0.0.1
@@ -85,3 +85,4 @@ Enter your guess: 25
 Server: Too low!
 Enter your guess: 42
 Server: Correct! You guessed the number.
+```
