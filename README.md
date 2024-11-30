@@ -42,18 +42,21 @@ To test the provided server and client code, You will need two devices or at lea
 Here's a step-by-step guide:
 
 ### 1. Ensure Network Connectivity
-If testing on two physical devices:
+- **If testing on two physical devices:**
 Start a personal hotspot on one device (User1).
 Connect the second device (User2) to this hotspot.
-If testing on the same device:
+
+- **If testing on the same device:**
 Use localhost (127.0.0.1) as the host IP address for both server and client.
 
+
+
 ### 2. Run the Server
-``bash 
+```python 
 python server.py
 
 ### 3. Run the Client
-``bash 
+```python 
 python client.py
 
 ### 4. If prompted, enter the server's IP address:
@@ -67,12 +70,12 @@ ________________________________________
 #### **Sample Output**
 
 ### Server Terminal:
-``bash
+```plaintext
 Server started. Waiting for clients on 0.0.0.0:12345...
 Client connected from ('127.0.0.1', 54321)
 
 ### Client Terminal:
-``bash
+```plaintext
 Enter the host's IP address: 127.0.0.1
 Connected to the server!
 Server: Welcome to Guess the Number! Guess a number between 1 and 100.
