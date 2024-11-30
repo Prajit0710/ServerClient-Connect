@@ -1,42 +1,34 @@
-#### **LAN Multiplayer Functionality**
+## LAN Multiplayer Functionality
 
-### 1. Enable LAN Communication
+### **1. Enable LAN Communication**
 Ensure both devices can communicate over the same LAN. You can use sockets for TCP or UDP communication. Python’s socket module is a good choice.
-
-### 2. Host Creates a Room (User1)
+### **2. Host Creates a Room (User1)**
 Enable the hotspot: User1 creates a personal hotspot.
 Run a socket server: User1 starts a server that listens for incoming connections from User2.
 Share connection details: The server broadcasts its availability (e.g., IP and port).
-### 3. Client Joins the Room (User2)
+### **3. Client Joins the Room (User2)**
 Connect to the host's hotspot: User2 connects to the same Wi-Fi network.
 Find the host's server: Either:
 Enter the host's IP address manually, or
 Use a UDP broadcast to discover the server automatically
 
 
-
-
-#### Future Enhancements
-### Automatic Discovery: 
+## Future Enhancements
+### **Automatic Discovery:** 
 Use UDP broadcasting for automatic server discovery instead of manually entering the IP address.
-
-### Multiple Clients: 
+### **Multiple Clients:**
 Modify the server to handle multiple clients using threading or asyncio.
-
-### User Interface: 
+### **User Interface:**
 Add a graphical interface using libraries like Tkinter or PyQt for a more user-friendly experience.
-
-### Data Validation: 
+### **Data Validation:** 
 Handle edge cases, such as invalid input or disconnected clients.
-
-### Encryption: 
+### **Encryption:**
 If privacy is important, encrypt data using SSL or Python’s cryptography module.
-
 
 ________________________________________
 
 
-#### **Setup for Testing**
+## Setup for Testing
 
 To test the provided server and client code, You will need two devices or at least two terminals on the same computer. 
 Here's a step-by-step guide:
@@ -67,7 +59,7 @@ python client.py
 ________________________________________
 
 
-#### **Sample Output**
+## Sample Output
 
 ### Server Terminal:
 ```plaintext
